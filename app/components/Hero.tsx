@@ -1,12 +1,27 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
       className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16"
       style={{ backgroundColor: "#fff8f0" }}
     >
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto flex flex-col items-center">
+
+        {/* Large logo centered */}
+        <div className="mb-10">
+          <Image
+            src="/logo-large.jpg"
+            alt="Sol-Ray Bob"
+            width={320}
+            height={320}
+            style={{ borderRadius: "50%", objectFit: "cover" }}
+            priority
+          />
+        </div>
+
         <p
-          className="font-sans text-xs uppercase mb-8"
+          className="font-sans text-xs uppercase mb-6"
           style={{ color: "#e8821a", letterSpacing: "0.2em" }}
         >
           Sun science. Solar philosophy. Daytime living.
@@ -16,7 +31,7 @@ export default function Hero() {
           className="font-serif font-light mb-8"
           style={{
             color: "#1a1008",
-            fontSize: "clamp(2.5rem, 6vw, 5rem)",
+            fontSize: "clamp(2.2rem, 5vw, 4.5rem)",
             lineHeight: "1.1",
           }}
         >
