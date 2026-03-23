@@ -11,7 +11,7 @@ export default function Hero() {
         {/* Large logo centered */}
         <div className="mb-10">
           <Image
-            src="/logo-large.jpg"
+            src="/logo-large.png"
             alt="Sol-Ray Bob"
             width={320}
             height={320}
