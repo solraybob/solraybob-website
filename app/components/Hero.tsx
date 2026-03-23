@@ -8,14 +8,14 @@ export default function Hero() {
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center">
 
-        {/* Large logo centered */}
+        {/* Large logo centered - no background, no border */}
         <div className="mb-10">
           <Image
             src="/logo-large.png"
             alt="Sol-Ray Bob"
-            width={320}
-            height={320}
-            style={{ borderRadius: "50%", objectFit: "cover" }}
+            width={480}
+            height={480}
+            style={{ objectFit: "contain", mixBlendMode: "multiply" }}
             priority
           />
         </div>
